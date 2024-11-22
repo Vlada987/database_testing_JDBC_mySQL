@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.TestClass">
+        <methods>
+          <include name="test05_check_for_every_ID_to_be_in_Asc_order"/>
+          <include name="onTestFailure"/>
+          <include name="onFinish"/>
+          <include name="onTestStart"/>
+          <include name="test11_update_table"/>
+          <include name="shutDown"/>
+          <include name="onTestSuccses"/>
+          <include name="onStart"/>
+        </methods>
+      </class> <!-- tests.TestClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

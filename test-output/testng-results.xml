@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="12" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-22T18:27:04 CET" name="Default suite" finished-at="2024-11-22T18:27:12 CET" duration-ms="7563">
+    <groups>
+    </groups>
+    <test started-at="2024-11-22T18:27:04 CET" name="Default test" finished-at="2024-11-22T18:27:12 CET" duration-ms="7563">
+      <class name="tests.TestClass">
+        <test-method is-config="true" signature="onStart(org.testng.ITestContext)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:04 CET" name="onStart" finished-at="2024-11-22T18:27:05 CET" duration-ms="1235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1109730f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onStart -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:05 CET" name="onTestStart" finished-at="2024-11-22T18:27:05 CET" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test00_succsesfull_connection()[pri:0, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test00_succsesfull_connection()[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:05 CET" name="test00_succsesfull_connection" finished-at="2024-11-22T18:27:06 CET" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test00_succsesfull_connection -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestFailure" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test00_succsesfull_connection status=SUCCESS method=TestClass.test00_succsesfull_connection()[pri:0, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:06 CET" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test00_succsesfull_connection status=SUCCESS method=TestClass.test00_succsesfull_connection()[pri:0, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestStart" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test01_unsuccsesfull_connection()[pri:1, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test01_unsuccsesfull_connection()[pri:1, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="test01_unsuccsesfull_connection" finished-at="2024-11-22T18:27:06 CET" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01_unsuccsesfull_connection -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestFailure" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test01_unsuccsesfull_connection status=SUCCESS method=TestClass.test01_unsuccsesfull_connection()[pri:1, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:06 CET" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test01_unsuccsesfull_connection status=SUCCESS method=TestClass.test01_unsuccsesfull_connection()[pri:1, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestStart" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test02_get_names_of_table_data_columns()[pri:2, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test02_get_names_of_table_data_columns()[pri:2, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="test02_get_names_of_table_data_columns" finished-at="2024-11-22T18:27:06 CET" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_get_names_of_table_data_columns -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestFailure" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test02_get_names_of_table_data_columns status=SUCCESS method=TestClass.test02_get_names_of_table_data_columns()[pri:2, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:06 CET" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test02_get_names_of_table_data_columns status=SUCCESS method=TestClass.test02_get_names_of_table_data_columns()[pri:2, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestStart" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test03_get_types_of_table_data_columns()[pri:3, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test03_get_types_of_table_data_columns()[pri:3, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="test03_get_types_of_table_data_columns" finished-at="2024-11-22T18:27:06 CET" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_get_types_of_table_data_columns -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestFailure" finished-at="2024-11-22T18:27:06 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test03_get_types_of_table_data_columns status=SUCCESS method=TestClass.test03_get_types_of_table_data_columns()[pri:3, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test03_get_types_of_table_data_columns status=SUCCESS method=TestClass.test03_get_types_of_table_data_columns()[pri:3, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestStart" finished-at="2024-11-22T18:27:06 CET" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test04_check_for_every_element_to_be_notNull()[pri:4, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test04_check_for_every_element_to_be_notNull()[pri:4, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="test04_check_for_every_element_to_be_notNull" finished-at="2024-11-22T18:27:06 CET" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04_check_for_every_element_to_be_notNull -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestFailure" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test04_check_for_every_element_to_be_notNull status=SUCCESS method=TestClass.test04_check_for_every_element_to_be_notNull()[pri:4, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test04_check_for_every_element_to_be_notNull status=SUCCESS method=TestClass.test04_check_for_every_element_to_be_notNull()[pri:4, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method signature="test05_check_for_every_ID_to_be_in_Asc_order()[pri:5, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="test05_check_for_every_ID_to_be_in_Asc_order" finished-at="2024-11-22T18:27:06 CET" duration-ms="37" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at tests.TestClass.test05_check_for_every_ID_to_be_in_Asc_order(TestClass.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05_check_for_every_ID_to_be_in_Asc_order -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestStart" finished-at="2024-11-22T18:27:06 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test05_check_for_every_ID_to_be_in_Asc_order()[pri:5, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestFailure" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test05_check_for_every_ID_to_be_in_Asc_order status=FAILURE method=TestClass.test05_check_for_every_ID_to_be_in_Asc_order()[pri:5, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test05_check_for_every_ID_to_be_in_Asc_order status=FAILURE method=TestClass.test05_check_for_every_ID_to_be_in_Asc_order()[pri:5, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestStart" finished-at="2024-11-22T18:27:06 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test07_check_for_every_userName_to_be_unique()[pri:7, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test07_check_for_every_userName_to_be_unique()[pri:7, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="test07_check_for_every_userName_to_be_unique" finished-at="2024-11-22T18:27:06 CET" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test07_check_for_every_userName_to_be_unique -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestFailure" finished-at="2024-11-22T18:27:06 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test07_check_for_every_userName_to_be_unique status=SUCCESS method=TestClass.test07_check_for_every_userName_to_be_unique()[pri:7, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:06 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test07_check_for_every_userName_to_be_unique status=SUCCESS method=TestClass.test07_check_for_every_userName_to_be_unique()[pri:7, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="onTestStart" finished-at="2024-11-22T18:27:06 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test08_add_items_into_dataBase()[pri:8, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test08_add_items_into_dataBase()[pri:8, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:06 CET" name="test08_add_items_into_dataBase" finished-at="2024-11-22T18:27:10 CET" duration-ms="3391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test08_add_items_into_dataBase -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestFailure" finished-at="2024-11-22T18:27:10 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test08_add_items_into_dataBase status=SUCCESS method=TestClass.test08_add_items_into_dataBase()[pri:8, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:10 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test08_add_items_into_dataBase status=SUCCESS method=TestClass.test08_add_items_into_dataBase()[pri:8, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method signature="test09_check_to_be_unable_to_add_duplicate_usernames()[pri:9, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="test09_check_to_be_unable_to_add_duplicate_usernames" finished-at="2024-11-22T18:27:10 CET" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09_check_to_be_unable_to_add_duplicate_usernames -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestStart" finished-at="2024-11-22T18:27:10 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test09_check_to_be_unable_to_add_duplicate_usernames()[pri:9, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestFailure" finished-at="2024-11-22T18:27:10 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test09_check_to_be_unable_to_add_duplicate_usernames status=SUCCESS method=TestClass.test09_check_to_be_unable_to_add_duplicate_usernames()[pri:9, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:10 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test09_check_to_be_unable_to_add_duplicate_usernames status=SUCCESS method=TestClass.test09_check_to_be_unable_to_add_duplicate_usernames()[pri:9, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestStart" finished-at="2024-11-22T18:27:10 CET" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test10_incorrect_table_name_exception_check()[pri:10, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="test10_incorrect_table_name_exception_check()[pri:10, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="test10_incorrect_table_name_exception_check" finished-at="2024-11-22T18:27:10 CET" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_incorrect_table_name_exception_check -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:10 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test10_incorrect_table_name_exception_check status=SUCCESS method=TestClass.test10_incorrect_table_name_exception_check()[pri:10, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestFailure" finished-at="2024-11-22T18:27:10 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test10_incorrect_table_name_exception_check status=SUCCESS method=TestClass.test10_incorrect_table_name_exception_check()[pri:10, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method signature="test11_update_table()[pri:11, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="test11_update_table" finished-at="2024-11-22T18:27:11 CET" duration-ms="557" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [charissa.gottlieb] but found [donnell.koepp]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [charissa.gottlieb] but found [donnell.koepp]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:643)
+at tests.TestClass.test11_update_table(TestClass.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11_update_table -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:10 CET" name="onTestStart" finished-at="2024-11-22T18:27:10 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClass.test11_update_table()[pri:11, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:11 CET" name="onTestFailure" finished-at="2024-11-22T18:27:11 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test11_update_table status=FAILURE method=TestClass.test11_update_table()[pri:11, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestFailure -->
+        <test-method is-config="true" signature="onTestSuccses(org.testng.ITestResult)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:11 CET" name="onTestSuccses" finished-at="2024-11-22T18:27:11 CET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test11_update_table status=FAILURE method=TestClass.test11_update_table()[pri:11, instance:tests.TestClass@4550bb58] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestSuccses -->
+        <test-method is-config="true" signature="shutDown()[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:11 CET" name="shutDown" finished-at="2024-11-22T18:27:11 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+        <test-method is-config="true" signature="onFinish(org.testng.ITestContext)[pri:0, instance:tests.TestClass@4550bb58]" started-at="2024-11-22T18:27:11 CET" name="onFinish" finished-at="2024-11-22T18:27:12 CET" depends-on-methods="tests.BaseTest.shutDown" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1109730f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFinish -->
+      </class> <!-- tests.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

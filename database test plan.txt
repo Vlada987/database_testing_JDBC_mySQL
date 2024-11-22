@@ -1,0 +1,110 @@
+### Test Plan for `TestClass` Test Suite
+
+#### **1. Objective:**
+The primary objective of this test suite is to validate the correctness of operations performed on a database using JDBC, specifically focusing on database connections, data retrieval, data integrity, and SQL execution (including insert and update operations).
+
+#### **2. Scope:**
+This test plan covers the following types of operations:
+- Database connectivity checks (both successful and unsuccessful).
+- Metadata retrieval (e.g., column names and types).
+- Data validation (non-null checks, unique checks, ascending order checks).
+- Data manipulation (insert and update operations).
+- Error handling (e.g., handling duplicate entries and incorrect table names).
+
+#### **3. Test Suite Breakdown:**
+
+1. **Test 0: Successful Database Connection (`test00_succsesfull_connection`)**
+   - **Objective**: To verify that a valid connection to the database can be established.
+   - **Inputs**: Valid database credentials (`url`, `user`, `password`).
+   - **Expected Outcome**: Connection is successfully established and is valid for at least 5 seconds.
+   - **Pass Criteria**: Assert that the connection is valid (`status == true`).
+
+2. **Test 1: Unsuccessful Database Connection (`test01_unsuccsesfull_connection`)**
+   - **Objective**: To verify that an error is thrown when invalid database credentials are used.
+   - **Inputs**: Invalid database password.
+   - **Expected Outcome**: An error message indicating "Access denied for user 'root'" is returned.
+   - **Pass Criteria**: Assert that the error message contains the string `Access denied for user 'root'`.
+
+3. **Test 2: Retrieve Column Names (`test02_get_names_of_table_data_columns`)**
+   - **Objective**: To retrieve the column names of the `users` table.
+   - **Inputs**: SQL query: `SELECT * FROM users`.
+   - **Expected Outcome**: The correct column names are retrieved: `id`, `name`, `username`, `email`, `city`.
+   - **Pass Criteria**: Assert that the metadata matches the expected column names.
+
+4. **Test 3: Retrieve Column Types (`test03_get_types_of_table_data_columns`)**
+   - **Objective**: To verify the data types of the columns in the `users` table.
+   - **Inputs**: SQL query: `SELECT * FROM users`.
+   - **Expected Outcome**: The correct column types are retrieved: `INT`, `VARCHAR`, `VARCHAR`, `VARCHAR`, `VARCHAR`.
+   - **Pass Criteria**: Assert that the column types match the expected values.
+
+5. **Test 4: Check Non-Null Data (`test04_check_for_every_element_to_be_notNull`)**
+   - **Objective**: To verify that all elements in the `users` table are not null.
+   - **Inputs**: SQL query: `SELECT * FROM users`.
+   - **Expected Outcome**: All data in the `users` table is non-null.
+   - **Pass Criteria**: Assert that the `checkNotNull` method returns true, and the number of rows is greater than 5.
+
+6. **Test 5: Check ID Order (`test05_check_for_every_ID_to_be_in_Asc_order`)**
+   - **Objective**: To verify that the IDs in the `users` table are in ascending order.
+   - **Inputs**: SQL query: `SELECT * FROM users`.
+   - **Expected Outcome**: The IDs are in ascending order, starting from 1.
+   - **Pass Criteria**: Assert that the ID values are in ascending order (`rs.getInt(1) == index`).
+
+7. **Test 6: Email Contains '@' (`test06_check_for_every_email_to_contains_monkey`)**
+   - **Objective**: To verify that the email field contains an "@" symbol (disabled for now).
+   - **Inputs**: SQL query: `SELECT * FROM users`.
+   - **Expected Outcome**: All emails should contain "@".
+   - **Pass Criteria**: Assert that every email contains the "@" symbol.
+
+8. **Test 7: Check for Unique Usernames (`test07_check_for_every_userName_to_be_unique`)**
+   - **Objective**: To verify that all usernames in the `users` table are unique.
+   - **Inputs**: SQL query: `SELECT * FROM users`.
+   - **Expected Outcome**: All usernames should be unique.
+   - **Pass Criteria**: Assert that the `hasNoDuplicates` method returns true for the list of usernames.
+
+9. **Test 8: Add Items to Database (`test08_add_items_into_dataBase`)**
+   - **Objective**: To verify that new records can be added to the `users` table.
+   - **Inputs**: Insert data (e.g., names, usernames, emails, cities) into the `users` table.
+   - **Expected Outcome**: The records are successfully added to the table, and the row count increases by the expected number.
+   - **Pass Criteria**: Assert that the number of new rows added is equal to the target number.
+
+10. **Test 9: Prevent Adding Duplicate Usernames (`test09_check_to_be_unable_to_add_duplicate_usernames`)**
+    - **Objective**: To verify that the database prevents insertion of duplicate usernames.
+    - **Inputs**: Attempt to insert a user with a duplicate username.
+    - **Expected Outcome**: The database should throw an error indicating a duplicate entry.
+    - **Pass Criteria**: Assert that the error message contains the string `Duplicate entry`.
+
+11. **Test 10: Incorrect Table Name Exception (`test10_incorrect_table_name_exception_check`)**
+    - **Objective**: To verify that an exception is thrown when querying a non-existing table.
+    - **Inputs**: SQL query: `SELECT * FROM _wrong_users`.
+    - **Expected Outcome**: The database should throw an error indicating that the table does not exist.
+    - **Pass Criteria**: Assert that the error message contains the string `doesn't exist`.
+
+12. **Test 11: Update Table (`test11_update_table`)**
+    - **Objective**: To verify that records can be updated in the `users` table.
+    - **Inputs**: SQL update query to change the `username` where the `id` matches a specific value.
+    - **Expected Outcome**: The `username` is successfully updated, and the update operation returns a success status.
+    - **Pass Criteria**: Assert that the `username` was updated successfully and that the update count is `1`.
+
+#### **4. Test Environment:**
+- **Database**: MySQL (or any relational database that supports JDBC)
+- **Driver**: MySQL JDBC driver (`mysql-connector-java`), or any database-specific JDBC driver
+- **Test Framework**: TestNG
+- **Tools**: IDE (e.g., IntelliJ, Eclipse), Maven or Gradle for dependency management
+- **Operating System**: Any OS where the database and IDE are accessible (e.g., Windows, macOS, Linux)
+
+#### **5. Testing Tools:**
+- **TestNG**: For managing and executing the tests.
+- **JDBC**: For database connectivity and execution of SQL queries.
+- **Assertions**: TestNG's `Assert` class for validating expected outcomes.
+
+#### **6. Test Execution and Reporting:**
+- **Execution Order**: The tests will run sequentially based on their priority as defined in the annotations (`@Test(priority = X)`).
+- **Reporting**: TestNG will generate reports in HTML and XML format, which will be used to verify test execution results.
+- **Logs**: Logs will be generated for SQL query execution and results, especially for debugging any failures.
+
+#### **7. Pass/Fail Criteria:**
+- **Pass**: All assertions in each test pass, confirming that the functionality works as expected.
+- **Fail**: Any assertion failure, such as an unexpected exception, incorrect query results, or incorrect error messages, will cause the test to fail.
+
+#### **8. Conclusion:**
+This test plan provides a structured approach to testing a variety of database operations, ensuring that database connectivity, data integrity, and SQL operations (INSERT, SELECT, UPDATE) work as expected. The suite also tests for error conditions, such as duplicate entries and incorrect table names.
